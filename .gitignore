@@ -6,3 +6,5 @@
 /test-results/
 /UnitTests-iOS/bin/
 /UnitTests-iOS/obj/
+
+/TinyJSON/bin/
