@@ -42,7 +42,12 @@ namespace TinyJSON
 			else
 			{
 				Double parsedValue;
-				Double.TryParse( value, out parsedValue );
+                Double.TryParse(
+                    value,
+                    NumberStyles.Any,
+                    CultureInfo.InvariantCulture.NumberFormat,
+                    out parsedValue
+                );
 				return parsedValue;
 			}
 		}
